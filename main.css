@@ -1,6 +1,45 @@
 body,
 html {
-  /* height:100%; */
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      text-align: start;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 10px;
+    }
+
+    li::marker {
+      content: ' | ';
+    }
+  }
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .store-item {
+      max-width: 25%;
+      height: 500px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      span {
+        margin-right: 20px;
+      }
+    }
+  }
+  
+  footer {
+    display: flex;
+  }
 
   margin: 0px;
   padding: 0px;
